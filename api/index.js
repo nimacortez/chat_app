@@ -1,6 +1,8 @@
 const express = require('express');
+const dotenv = require('dotenv');
 
-const mongoUrl = 'mongodb+srv://corteznima:JdsD82Tk5zpyEXsp@cluster0.qddx7os.mongodb.net/?retryWrites=true&w=majority';
+dotenv.config();
+console.log(process.env.MONGO_URL);
 
 const app = express();
 
